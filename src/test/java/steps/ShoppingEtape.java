@@ -68,10 +68,6 @@ public class ShoppingEtape {
         availibilite = getTextElement(shoppingPage.getAvailability());
         if (availibilite.toLowerCase().contains("en stock")) {
             selectByValue(shoppingPage.getSelectQuantite(), "2");
-//            if (shoppingPage.getCoverageOption().isDisplayed()){
-//                clickFunction(shoppingPage.getCoverageOption());
-//                clickFunction(shoppingPage.getPanier());
-//            }else clickFunction(shoppingPage.getAjouterAuPanier());
         }
         clickFunction(shoppingPage.getAjouterAuPanier());
         clickFunction(shoppingPage.getAllerAuPanier());
