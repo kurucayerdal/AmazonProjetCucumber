@@ -8,8 +8,10 @@ import org.testng.annotations.AfterClass;
 @CucumberOptions(
         features = {"src/test/java/features/Connexion.feature"},
         glue = {"steps"},
-        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/ExtentReportConnexionPage.html"}
-)                    // oluşturalacak raporun yeri ve adı veriliyor.
+        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/ExtentReportConnexionPage.html", // oluşturalacak raporun yeri ve adı veriliyor.
+                "html:target/cucumber-report", //jenkins için eklendi
+                "json:target/cucumber.json",}
+)
 
 public class ConnexionRunner extends AbstractTestNGCucumberTests {
 
