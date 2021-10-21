@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
         features = {"src/test/java/features/Shopping.feature"},
         glue = {"steps"},
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/ExtentReportShoppingPage.html"}
+        // plugin pour extent report
 )
 
 public class ShoppingPageRunner extends AbstractTestNGCucumberTests {
