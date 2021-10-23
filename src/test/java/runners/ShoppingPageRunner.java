@@ -16,7 +16,7 @@ public class ShoppingPageRunner extends AbstractTestNGCucumberTests {
 
     @AfterClass
     public static void afterClass() {
-        Reporter.loadXMLConfig("src/test/java/xmlFiles/ExtendReportSet.xml");
+        Reporter.loadXMLConfig("src/test/java/xmlFiles/ExtentReportSet.xml");
         Reporter.setSystemInfo("User Name", "Erdal Kurucay");
         Reporter.setSystemInfo("Application Name", "Amazon Shopping Page");
         Reporter.setSystemInfo("Operating System Type", System.getProperty("os.name").toString());
