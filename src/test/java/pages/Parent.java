@@ -29,7 +29,7 @@ public class Parent {
         js.executeScript("arguments[0].scrollIntoView();", element);
     }
 
-    public static void clickFunction(WebElement element) {
+    public static void  clickFunction(WebElement element) {
         waitUntilClickable(element);
         scrollToElement(element);
         element.click();
